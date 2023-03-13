@@ -5,8 +5,6 @@ from threading import Thread
 from time import *
 from random import *
 
-shared_x = randint(10,99)
-
 def sleeping(name):
     global shared_x
     s = randint(1,20)
@@ -23,13 +21,13 @@ def sleeping(name):
     print(txt)
 
 
-def sleeper(name):
+def sleeper(name, num_thread):
     sleeplist = list()
 
     global shared_x
     shared_x = randint(10,99)
 
-    for i in range(3):
+    for i in range(num_thread):
         subsleeper = Thread(target=sleeping, args=(name + ' ' + str(i),))
         sleeplist.append(subsleeper)
 
@@ -45,8 +43,18 @@ def sleeper(name):
 
    
 if __name__ == '__main__':
-    p = Process(target=sleeper, args=('eve', ))
-    q = Process(target=sleeper, args=('bob', ))
 
-    p.start(); q.start()
-    p.join(); q.join()
+    process_list = list()
+    for i in range(10):
+        process_list.append(Process(target=sleeper, args=('bob_' + str(i), randint(2,4),)))
+
+    global shared_x
+    shared_x = randint(10,99)
+
+    print(shared_x)
+
+    for p in process_list: p.start()
+
+    for p in process_list: p.join()
+
+    print(shared_x)

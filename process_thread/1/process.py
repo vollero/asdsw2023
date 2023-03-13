@@ -4,20 +4,36 @@ from multiprocessing import Process
 from time import *
 from random import *
 
+global value
+
 def sleeper(name):
+    global value
     t = gmtime()
-    s = randint(1,20)
-    txt = str(t.tm_min) + ':' + str(t.tm_sec) + ' ' + name + ' is going to sleep for ' + str(s) + ' seconds'
+    s = randint(4,10)
+    txt = str(t.tm_min) + ':' + str(t.tm_sec) + ' ' + name + ' is going to sleep for ' + str(s) + ' seconds ' 
+    #+ str(value) 
     print(txt)
     sleep(s)
     t = gmtime()
-    txt = str(t.tm_min) + ':' + str(t.tm_sec) + ' ' + name + ' has woken up'
+    txt = str(t.tm_min) + ':' + str(t.tm_sec) + ' ' + name + ' has woken up ' 
+    #+ str(value)
     print(txt)
 
 if __name__ == '__main__':
-    p1 = Process(target=sleeper, args=('eve', ))
-    p2 = Process(target=sleeper, args=('bob', ))
-    p3 = Process(target=sleeper, args=('mike', ))
+    process_list = list()
+    global value
+    for i in range(10):
+        p = Process(target=sleeper, args=('mike_{}'.format(i),))
+        process_list.append(p)
 
-    p1.start(); p2.start(); p3.start()
-    p1.join(); p2.join(); p3.join()
+    print('tutti pronti')
+
+    for i, p in enumerate(process_list): 
+        #value = i
+        p.start()
+
+    print('tutti avviati')
+
+    for p in process_list: p.join()
+
+    print('tutti terminati!')
