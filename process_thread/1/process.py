@@ -15,8 +15,9 @@ def sleeper(name):
     print(txt)
 
 if __name__ == '__main__':
-    p = Process(target=sleeper, args=('eve', ))
-    q = Process(target=sleeper, args=('bob', ))
+    p1 = Process(target=sleeper, args=('eve', ))
+    p2 = Process(target=sleeper, args=('bob', ))
+    p3 = Process(target=sleeper, args=('mike', ))
 
-    p.start(); q.start()
-    p.join(); q.join()
+    p1.start(); p2.start(); p3.start()
+    p1.join(); p2.join(); p3.join()
