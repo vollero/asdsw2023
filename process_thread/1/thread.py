@@ -1,3 +1,5 @@
+# See "Distributed Systems" - Van Steen, Tanenbaum - Ed. 4 (p. 118)
+
 from multiprocessing import Process
 from threading import Thread
 from time import *

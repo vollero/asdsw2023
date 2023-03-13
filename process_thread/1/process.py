@@ -1,3 +1,5 @@
+# See "Distributed Systems" - Van Steen, Tanenbaum - Ed. 4 (p. 117)
+
 from multiprocessing import Process
 from time import *
 from random import *
