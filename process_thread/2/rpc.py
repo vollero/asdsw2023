@@ -47,7 +47,7 @@ def process2():
         while True:
             try:
                 line = c.get_item()
-                process2_logger.info(f"Read: {int(line)}")
+                process2_logger.info(f"Pid: {os.getpid()} Read: {int(line)} dopo")
                 break
             except Exception:
                 pass
@@ -64,7 +64,7 @@ def main():
     parent_logger.info(f"Pid:{os.getpid()}")
 
     # Setup shared memory using Array (multiprocessing)
-    arr = Array('i', [-1] * 10)
+    # arr = Array('i', [-1] * 10)
 
     # Setup processes
     procs = [Process(target=process1), Process(target=process2)]
