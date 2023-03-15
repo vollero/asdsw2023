@@ -1,3 +1,5 @@
+# from: https://github.com/spurin/python-ipc-examples
+
 import logging
 import os
 import time
