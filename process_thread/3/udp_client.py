@@ -8,6 +8,6 @@ bufferSize   = 1024
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
 UDPClientSocket.sendto(str.encode('Questo è il messaggio del Client'), (ServerIP, ServerPORT))
-mess, addr = UDPServerSocket.recvfrom(bufferSize) 
+mess, addr = UDPClientSocket.recvfrom(bufferSize) 
 
-print('Messaggio da parte del server: {}'.format(mess.decode('utf-8')))
+print('C: Messaggio da parte del server: {}'.format(mess.decode('utf-8')))
