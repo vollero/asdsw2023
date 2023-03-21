@@ -37,15 +37,12 @@ def thread_consumatore(nome):
 
     while produttoreRunning or len(sharedBuffer) > 0:
         if len(sharedBuffer) > 0:
-
             mutex.acquire()
             row = sharedBuffer[0]
             logging.info("{} ha letto dalla memoria condivisa la riga [{}]". format(nome, row))
             sharedBuffer.remove(row)
             mutex.release()
-
         else:
-
             time.sleep(randrange(2,5))
 
     logging.info("{} sta terminando ...".format(nome))
@@ -54,9 +51,7 @@ def thread_consumatore(nome):
 if __name__ == "__main__":
     format = "%(asctime)s: %(message)s"
     logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
-
-    logging.info("Main       :  before creating threads")
-    
+    logging.info("Main       :  before creating threads")    
     
     produttore  = Thread(target=thread_produttore,  args=('Produttore', argv[1],))
     consumatore = Thread(target=thread_consumatore, args=('Consumatore',))
