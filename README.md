@@ -5,3 +5,5 @@ Progetti, File e Risorse del corso di Architetture dei Sistemi Distribuiti 2022/
 # Risorse
 
 BOOK - SISTEMI DISTRIBUITI: https://www.distributed-systems.net/index.php/books/ds4/
+
+WEB - CODING INTERVIEW UNIVERSITY: https://github.com/jwasham/coding-interview-university
