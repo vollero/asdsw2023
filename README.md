@@ -9,3 +9,5 @@ BOOK - SISTEMI DISTRIBUITI: https://www.distributed-systems.net/index.php/books/
 WEB - CODING INTERVIEW UNIVERSITY: https://github.com/jwasham/coding-interview-university
 
 WEB - IOT FOR BEGINNERS: https://github.com/microsoft/IoT-For-Beginners
+
+WEB - CODE WARS: https://www.codewars.com/
