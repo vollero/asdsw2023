@@ -148,7 +148,7 @@ if __name__ == '__main__':
     clientIP     = argv[3]
     clientPORT   = int(argv[4])
 
-    logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.ERROR)
+    logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
     clientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
     clientSocket.bind( (clientIP, clientPORT) )
