@@ -1,7 +1,7 @@
 import requests
 import json
 
-address = 'http://192.168.114.205:12345'
+address = 'http://127.0.0.1:6000'
 
 response = requests.get(address + '/api/v1/resources/students/all')
 print('-'*80)
@@ -18,7 +18,7 @@ print('RESPONSE.JSON()')
 print(response.json())
 
 
-query = {'id': 1}
+query = {'id': 3}
 response = requests.get(address + '/api/v1/resources/students', params=query)
 print('-'*80)
 print(json.dumps(response.json(), indent=4, sort_keys=True))
