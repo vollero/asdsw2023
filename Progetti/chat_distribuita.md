@@ -17,13 +17,13 @@ di interfacciamento dei client.
  Gli studenti devono progettare un protocollo di comunicazione per lo scambio di messaggi tra i nodi. 
  Questo protocollo dovrebbe supportare almeno le seguenti operazioni:
 
-   **Registrazione**: Un nodo deve poter registrarsi nella rete, informando gli altri nodi della sua presenza.
+ * **Registrazione**: Un nodo deve poter registrarsi nella rete, informando gli altri nodi della sua presenza.
 
-   **Inoltro dei messaggi**: Un nodo deve poter inoltrare un messaggio a tutti gli altri nodi nella rete.
+ * **Inoltro dei messaggi**: Un nodo deve poter inoltrare un messaggio a tutti gli altri nodi nella rete.
 
-   **Ricezione dei messaggi**: Un nodo deve poter ricevere messaggi da altri nodi.
+ * **Ricezione dei messaggi**: Un nodo deve poter ricevere messaggi da altri nodi.
 
-   **Disconnessione**: Un nodo deve poter notificare gli altri nodi quando lascia la rete.
+ * **Disconnessione**: Un nodo deve poter notificare gli altri nodi quando lascia la rete.
 
  **Modello di Interfacciamento dei Client**: 
 
