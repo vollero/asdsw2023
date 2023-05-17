@@ -11,3 +11,7 @@ WEB - CODING INTERVIEW UNIVERSITY: https://github.com/jwasham/coding-interview-u
 WEB - IOT FOR BEGINNERS: https://github.com/microsoft/IoT-For-Beginners
 
 WEB - CODE WARS: https://www.codewars.com/
+
+WEB - RFC 1149: https://www.rfc-editor.org/rfc/rfc1149
+
+WEB . RFC 2549: https://www.rfc-editor.org/rfc/rfc2549
