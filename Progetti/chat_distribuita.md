@@ -36,12 +36,16 @@ di interfacciamento dei client.
 
  **Scalabilità**: Il sistema dovrebbe essere in grado di gestire un numero elevato di nodi e di messaggi. Gli studenti dovrebbero pensare a come possono progettare il sistema per essere il più scalabile possibile.
 
- **Implementazione**: L'implementazione del progetto deve essere realizzata in Python, utilizzando la programmazione  concorrente con l'uso di processi e/o thread. Deve inoltre gestire la comunicazione tra processi in rete.
+ **Implementazione**: 
+ 
+ L'implementazione del progetto deve essere realizzata in Python, utilizzando la programmazione  concorrente con l'uso di processi e/o thread. Deve inoltre gestire la comunicazione tra processi in rete.
 
- **Test**: Gli studenti devono fornire test appropriati per verificare la corretta funzionalità del sistema. Questi test dovrebbero coprire tutte le funzionalità chiave del sistema e dovrebbero essere automatizzati per quanto possibile.
+ **Test**: 
+ 
+Gli studenti devono fornire test appropriati per verificare la corretta funzionalità del sistema. Questi test dovrebbero coprire tutte le funzionalità chiave del sistema e dovrebbero essere automatizzati per quanto possibile.
 
  **Consegna del Progetto**
 
- Gli studenti dovranno fornire il codice sorgente del progetto, la documentazione del progetto 
+Gli studenti dovranno fornire il codice sorgente del progetto, la documentazione del progetto 
 (che include la descrizione dell'architettura del sistema, del protocollo di comunicazione e del modello di interfacciamento dei client), e i test. 
 Il tutto deve essere presentato in un formato facilmente accessibile e leggibile.
