@@ -1,6 +1,7 @@
 **Progetto: Sistema di Bilanciamento del Carico per Server di Trasferimento File**
 
 **Obiettivo del Progetto**
+
 Lo scopo di questo progetto è sviluppare un protocollo e un sistema di bilanciamento del carico tra più server di trasferimento file. 
 Gli studenti saranno responsabili della progettazione del load balancer, che deve gestire dinamicamente un insieme variabile di server identici e tenere traccia dei trasferimenti file secondo una politica di comunicazione da loro scelta.
 
